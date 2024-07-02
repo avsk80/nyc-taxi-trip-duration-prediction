@@ -4,6 +4,23 @@
 
 Machine Learning Ops project to predict trip duration for taxis in NYC
 
+
+#### Project Highlights (Technical):
+1) This project aims to use the latest MLOps tools to maintain ML models in production like - DVC, git for data and code versioning, and Docker to containerize the models and expose models as service by wrapping up with APIs. (I have used cookiecutter for the project code structure).
+2) I have taken the widely used NYC Taxi dataset for this project and experimented with various ML models - XGBoost, RandomForest, Linear Regression and Time series baselines like - Moving average and exponential smoothing. Please refer to this notebook for detailed EDA - [notebook][https://github.com/avsk80/nyc-taxi-trip-duration-prediction/blob/master/notebooks/NYC%20taxi.ipynb]
+3) To track the code I used git, and to track the data files I used DVC where my local storage is remote. This can be easily extended to any of the cloud services like S3, GCS, Blob storage etc. in the future.
+4) [To be done] Use MLFlow to track model experimentation and results as a dashboard. Mlflow gives a more detailed view than DVC.
+     
+#### Business Impact
+5) The business impact of building such models is that taxis can be diverted to locations where the probability of finding passengers is more likely. Thereby, increasing revenue stream for both the drivers as well as the Taxi vendor services. 
+
+#### To execute this project:
+1) Download or clone this repository
+2) Run the FastAPI script as
+```cmd
+   python app.py
+```
+
 ## Important
 
 This code will give error until the project is installed as a package in the environment that has all the dependencies for the project.
