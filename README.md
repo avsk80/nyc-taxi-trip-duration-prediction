@@ -1,9 +1,59 @@
-nyc-taxi-trip-duration-prediction
+# NYC-Taxi
+
 ==============================
 
-Venkata Sai Krishna Abbaraju
+Machine Learning project to predict trip duration for taxis in NYC
 
-Project Organization
+## Important
+
+This code will give error until the project is installed as a package in the environment that has all the dependencies for the project.
+
+After creation of environment and installation of all required packages using pip run this command in the command terminal.
+
+```cmd
+pip install -e .
+```
+
+| This will fix all the import statement errors such as `ModuleNotFoundError` when recreating pipelines using command
+
+```cmd
+dvc repro
+```
+
+## CI/CD through GitHub Actions
+
+The CI/CD workflow will throw an error while creating the CML report because no Personal Access Token is linked to the repository for safety purposes.
+
+I advice the user to generate his/her own access token as explained in the Session-5 and run this code in their own repository and it will work without any errors.
+
+> Thanks everyone for following the content with dedication and patience.👏
+
+## Docker
+
+Download Docker Desktop from the link [download here](https://www.docker.com/products/docker-desktop/)
+
+Once you are in project folder just type in the command
+
+```cmd
+docker init
+```
+
+The result will show something like this
+
+![alt text](screenshots/image.png)
+
+> It is advised to check the DOCKERFILE before committing to the build image phase. You can check the DOCKERFILE in the project.
+
+The next command to run is
+
+```cmd
+docker compose up --build
+```
+
+![alt text](screenshots/image1.png)
+
+## Project Organization
+
 ------------
 
     ├── LICENSE
@@ -51,7 +101,4 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+------------
