@@ -2,7 +2,7 @@
 
 ==============================
 
-Machine Learning project to predict trip duration for taxis in NYC
+Machine Learning Ops project to predict trip duration for taxis in NYC
 
 ## Important
 
